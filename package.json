@@ -1,0 +1,30 @@
+{
+  "name": "ethersv5",
+  "version": "1.0.0",
+  "description": "This repo contains demo node modules (javascript files) for interacting with the Ethereum blockchain using the Ethers.js library.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Collins",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "ethers": "^5.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ethereum",
+    "ethers",
+    "nft",
+    "contract",
+    "create",
+    "token"
+  ]
+}
