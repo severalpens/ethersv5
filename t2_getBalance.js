@@ -2,16 +2,12 @@ require('dotenv').config();
 const { ethers } = require("ethers");
 const network = "rinkeby";
 
-const provider = new ethers.providers.getDefaultProvider(network,
-  {
-    infura: {
-      projectId: process.env.projectId,
-      projectSecret: process.env.projectSecret
-    }
-  }
-);
+const provider = new ethers.providers.InfuraProvider(network, {
+  projectId: process.env.projectId,
+  projectSecret: process.env.projectSecret
+});
 
-//Get balance of Account2 (using async/await)
+
 const getBalanceAsync = async (address) => {
   let rawBalance = await provider.getBalance(address);
   return ethers.utils.formatEther(rawBalance);
