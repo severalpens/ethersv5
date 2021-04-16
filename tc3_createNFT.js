@@ -23,7 +23,7 @@ const factory = new ethers.ContractFactory(artifact.abi, artifact.bytecode, wall
     const contract = await deployment.deployed();
 
     //You can now add the contract address to the .env file (ftAddress)
-    console.log(chalk.green(`Success! You can now update your .env file: ftAddress=${contract.address}`));
+    console.log(chalk.green(`Success! You can now update your .env file: nftAddress=${contract.address}`));
     
     //You can inspect the token transfer activity on Etherscan 
     console.log(chalk.blue(`https://rinkeby.etherscan.io/token/${contract.address}`));
