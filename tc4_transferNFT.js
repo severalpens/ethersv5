@@ -1,8 +1,16 @@
 require('dotenv').config();
 const { ethers } = require("ethers");
-const network = "rinkeby";
+
+//Contract details
 const artifact = require("./build/contracts/NonFungibleTokenContract.json");
-const provider = new ethers.providers.InfuraProvider(network, process.env.INFURA);
+const network = "rinkeby";
+
+
+//Instantiations
+const provider = new ethers.providers.InfuraProvider(network, {
+  projectId: process.env.projectId,
+  projectSecret: process.env.projectSecret
+});
 const wallet = new ethers.Wallet(process.env.privateKey, provider);
 const contract = new ethers.Contract(process.env.nftAddress, artifact.abi, wallet);
 
