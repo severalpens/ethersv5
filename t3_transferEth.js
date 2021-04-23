@@ -15,7 +15,7 @@ const wallet = new ethers.Wallet(process.env.privateKey, provider);
 
   let tx = await wallet.sendTransaction({
     to: process.env.address2,
-    value: ethers.utils.parseEther("0.0000000001")
+    value: ethers.utils.parseEther("1")
   });
 
   console.log(chalk.green("Transaction request successfully sent! See Etherscan for details:"));
