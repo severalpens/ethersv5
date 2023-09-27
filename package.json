@@ -13,7 +13,7 @@
     "@openzeppelin/contracts": "^4.0.0",
     "chalk": "^4.1.0",
     "dotenv": "^8.2.0",
-    "ethers": "^5.1.0",
+    "ethers": "^5.7.2",
     "fs-extra": "^9.1.0"
   },
   "directories": {
